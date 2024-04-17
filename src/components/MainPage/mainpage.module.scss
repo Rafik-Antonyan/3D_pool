@@ -1,0 +1,350 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+$background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+$red: #e55643;
+$green: #2b9f5e;
+$yellow: #f1c83c;
+$shadow: #533d4a;
+
+.main {
+  width: 100%;
+  background-image: url("/assets/mainbg.jpg");
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  @include sm {
+    padding: 0 12px;
+  }
+}
+
+.section1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  animation: growDown 500ms ease-in-out forwards;
+  transform-origin: top center;
+  margin-top: 64px;
+
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include sm {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.parentoftext {
+  @include sm {
+    text-align: center;
+  }
+}
+
+.text {
+  max-width: 391.91px;
+  min-height: 57px;
+
+  >span {
+    color: #000;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.firstsecbuttons {
+  margin-top: 30.29px;
+  display: flex;
+  gap: 24px;
+
+  @include lg {
+    flex-direction: column;
+    max-width: 250px;
+  }
+}
+
+.section2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  animation: growDown 700ms ease-in-out forwards;
+  transform-origin: top center;
+
+  @include lg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal {
+  display: flex;
+  padding: 15px 17px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border-radius: 2px;
+  border: 2px solid #151515;
+  background: #fff;
+  box-shadow: 2px 2px 0px 0px #1e3445;
+
+  @include lg {
+    max-width: 100%;
+    grid-row: 1/2;
+  }
+}
+
+.draglines {
+  width: 100%;
+}
+
+.textConatiner {
+  display: flex;
+  padding: 32px 18.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border: 3px solid #f5f5f5;
+
+  @include sm {
+    margin-top: 40px;
+  }
+
+  @include xs {
+    padding: 32px 0;
+  }
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-gap: 12px;
+  padding: 15px 17px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  border: 2px solid #151515;
+  background: #fff;
+  box-shadow: 2px 2px 0px 0px #1e3445;
+
+  @include sm {
+    width: 254.69px;
+    height: 210px;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    text-align: start;
+  }
+}
+
+.slidertext {
+  color: #000;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.firstsecImg {
+  position: absolute;
+  top: 0vh;
+  width: 70vw;
+  left: -5vw;
+  height: 100vh;
+
+  >img {
+    position: unset !important;
+  }
+
+  @include lg {
+    padding-top: 20px;
+    height: 317.877px;
+    object-fit: contain;
+  }
+}
+
+.draglines3 {
+  width: 100%;
+}
+
+.imgbox {
+  width: 100%;
+  height: 400px;
+
+  @include sm {
+    margin: auto;
+  }
+
+  >img {
+    position: unset !important;
+  }
+
+  @include lg {
+    max-width: 402.132px;
+    height: 317.877px;
+  }
+
+  @include xs {
+    object-fit: contain;
+  }
+}
+
+.section3 {
+  display: flex;
+  width: 100%;
+  padding: 15px 17px;
+  margin: 65px auto 320px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 2px;
+  border: 2px solid #151515;
+  background: #fff;
+  box-shadow: 2px 2px 0px 0px #1e3445;
+  animation: growDown 800ms ease-in-out forwards;
+  transform-origin: top center;
+
+  @include lg {
+    max-width: 720px;
+  }
+
+  @include xs {
+    max-width: 300px;
+  }
+}
+
+.sectionbox3 {
+  flex: 1 0 0;
+  align-self: stretch;
+  border: 3px solid #f5f5f5;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+
+  @include sm {
+    flex-direction: column;
+    max-width: 210px;
+    margin: auto;
+  }
+}
+
+.opinion {
+  width: 260px;
+  height: 241px;
+  display: inline-flex;
+  padding: 16px 32.107px 24px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 2px;
+  border: 2px solid #151515;
+  background: #fff;
+  box-shadow: 2px 2px 0px 0px #1e3445;
+  position: relative;
+  cursor: pointer;
+
+  .opinion2 {
+    width: 260px;
+    height: 241px;
+    display: inline-flex;
+    padding: 16px 32.107px 24px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    border-radius: 2px;
+    border: 2px solid #151515;
+    background: #fff;
+    box-shadow: 2px 2px 0px 0px #1e3445;
+    z-index: 5;
+    right: -14px;
+    top: -14px;
+    display: none;
+  }
+
+  &:hover {
+    .opinion2 {
+      display: block;
+    }
+  }
+
+  .opinion3 {
+    width: 260px;
+    height: 241px;
+    display: inline-flex;
+    padding: 16px 32.107px 24px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    border-radius: 2px;
+    border: 2px solid #151515;
+    background: #fff;
+    box-shadow: 2px 2px 0px 0px #1e3445;
+    z-index: 5;
+    right: -14px;
+    top: -14px;
+    display: none;
+  }
+
+  &:hover {
+    .opinion3 {
+      display: block;
+    }
+  }
+}
+
+.opinionContent {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: #151515;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 32px 0 32px 0;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+}

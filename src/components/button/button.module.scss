@@ -1,0 +1,61 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.button {
+  font-family: 'DotGothic16', sans-serif;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  gap: 10px;
+  background: var(--blue, #20ade5);
+  box-shadow: -4px -4px 0px 0px #7e7e7e inset, 2px 2px 0px 0px #f0f0f0 inset,
+    -2px -2px 0px 0px #262626 inset;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 4px 4px 0px 0px #7e7e7e inset, 0 0 0px 0px #f0f0f0 inset,
+      -2px -2px 0px 0px #f0f0f0 inset;
+    transition: all 0.2s ease-in;
+  }
+
+  &.contained {
+    &.primary {
+      border: 1px solid transparent;
+      color: $white;
+      background-color: $primaryColor;
+    }
+
+    &.second {
+      border: 1px solid transparent;
+      color: $white;
+      background-color: $secondaryColor;
+    }
+  }
+
+  &.small {
+    font-size: 16px;
+    padding: 12px 32px;
+
+    @include md {
+      font-size: 15px;
+      padding: 12px 32px;
+    }
+  }
+
+  &.medium {
+    font-size: 16px;
+    padding: 12px 20px;
+
+    @include sm {
+      font-size: 15px;
+      padding: 10px 18px;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

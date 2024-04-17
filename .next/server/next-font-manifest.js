@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/home/master/Desktop/swm-pool/src/app/layout\":[\"static/media/94b45cb581d25b69-s.p.woff2\",\"static/media/7db16c3ffc8026e5-s.p.woff2\",\"static/media/4c83449f7395cb3b-s.p.woff2\",\"static/media/c9a5bc6a7c948fb0-s.p.woff2\",\"static/media/2d141e1a38819612-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

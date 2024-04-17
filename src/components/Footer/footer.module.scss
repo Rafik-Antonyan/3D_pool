@@ -1,0 +1,61 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.Footer {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  height: 64px;
+  width: 100%;
+  z-index: 9999;
+  padding: 16px 24px;
+  bottom: 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px
+}
+
+.Title1 {
+  color: rgba(21, 21, 21, 1);
+  font-size: 20.71px;
+  font-weight: 500;
+  line-height: 28.47px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.Title2 {
+  color: rgba(21, 21, 21, 1);
+  font-size: 20.71px;
+  font-weight: 300;
+  line-height: 28.47px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.privacy {
+  margin-top: 40px;
+  max-width: 1170px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .copyright {
+    color: rgb(172, 172, 172);
+  }
+}

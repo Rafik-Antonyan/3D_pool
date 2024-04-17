@@ -1,0 +1,61 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.Header {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  height: 64px;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  padding: 16px 20px;
+
+  @include xs {
+    padding: 16px 10px;
+  }
+}
+
+.changedHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  height: 64px;
+  width: 100%;
+  z-index: 9999;
+  padding: 16px 0;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Title1 {
+  color: rgba(21, 21, 21, 1);
+  font-size: 20.71px;
+  font-weight: 500;
+  line-height: 28.47px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.Title2 {
+  color: rgba(21, 21, 21, 1);
+  font-size: 20.71px;
+  font-weight: 300;
+  line-height: 28.47px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

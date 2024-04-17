@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=DotGothic16&display=swap");
+
+@import "../assets/scss/mixins";
+@import "../assets/scss/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.carousel-slider {
+  padding-bottom: 62px;
+}
+
+.control-dots {
+  bottom: 0 !important;
+}
+
+.carousel .slide img {
+  object-fit: contain;
+}
+
+.carousel .slider-wrapper.axis-horizontal {
+  max-width: 498px;
+
+  @include sm {
+    width: 254.69px;
+  }
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar{
+  background: transparent;
+  width: 0;
+  // height: 735.9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: url("/assets/Slider.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+::-webkit-scrollbar-button:single-button {
+  display: block;
+  border-style: solid;
+  height: 19px;
+  width: 22px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 10px 10px 0 10px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
